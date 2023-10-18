@@ -1,0 +1,39 @@
+.gallery {
+    display: grid;
+    grid-template-columns:
+        [container-start] 5rem [center-start] repeat(5,
+            [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 5rem [container-end];
+    background:
+        linear-gradient(to top, #2c3e509f, transparent),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+
+    min-height: 100vh;
+
+    .toolbar {
+        grid-column: container-start/conteinar-end;
+        height: 12rem;
+
+
+    }
+
+    &_content {
+      
+        background: linear-gradient(to left, #2f2f2f, #212121);
+        grid-column: center-start/center-end;
+        min-height: 100vh;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        h1 {
+            padding: 2vh 2vw;
+            font-size: calc(3rem + 3vw), ;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: whitesmoke;
+         
+           
+
+        }
+    }
+}
