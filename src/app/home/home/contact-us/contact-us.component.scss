@@ -1,0 +1,56 @@
+.contact-us {
+    display: grid;
+    grid-template-columns:
+        [container-start] 1fr [center-start] repeat(5,
+            [col-start] minmax(min-content, 30rem) [col-end]) [center-end] 1fr [container-end];
+
+          
+            background:
+            linear-gradient(to top,  #2c3e509f, transparent),
+            url(https://grainy-gradients.vercel.app/noise.svg);
+
+
+
+
+
+    .toolbar {
+        grid-template-columns: container-start/conteinar-end;
+        height: 16rem;
+
+    }
+
+    .content {
+        background:
+        // linear-gradient(to top,  #1e445d, #2c3e50);
+        linear-gradient(to top,  #2f2f2f, #212121);
+
+        grid-column: center-start/container-end;
+        width: 100%;
+        min-height: 70vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .contac-us_text {
+        padding: 4vh 4vw;
+     
+
+        h2 {
+            font-size: calc(1rem + 1vw);
+            font-weight: 400;
+            color: #ffc900;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+
+        }
+
+        p {
+            font-size: calc(0.5rem + 0.5vw);
+            font-weight: 200;
+            text-transform: uppercase;
+            color: whitesmoke;
+        }
+    }
+
+
+}

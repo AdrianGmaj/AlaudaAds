@@ -5,14 +5,20 @@
     position: fixed;
 
 
-    display: grid;
-    grid-template-rows: 2 1fr;
+    // display: grid;
+    // grid-row: 2 1fr;
+
     gap: 0;
 
-    background-color:
-        // #8C959A;
+    background:
+    // linear-gradient(to top,  #1e445d, #2c3e50);
+    linear-gradient(to top,  #2f2f2f, #212121);
 
-        #1e445d;
+      
+        // background:
+        // linear-gradient(to top,  #1e445d, #2c3e50),
+        // url(https://grainy-gradients.vercel.app/noise.svg);
+        // opacity: 90%;
     overflow: hidden;
     color: whitesmoke;
     z-index: 100;
@@ -47,5 +53,9 @@
             overflow: hidden;
             transition: all 0.5s ease;
         }
+    }
+
+    .active{
+        border-bottom: 0.1rem solid #ffc900 ;
     }
 }
