@@ -6,7 +6,8 @@ import { GalleryVolvoComponent } from './gallery/gallery-volvo/gallery-volvo.com
 
 const routes: Routes = [
 {path:'gallery', component: GalleryComponent},
-{path:'gallery/volvo', component: GalleryVolvoComponent},
+{path:'gallery/:id', component: GalleryVolvoComponent},
+
 ];
 
 @NgModule({

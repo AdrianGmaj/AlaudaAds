@@ -1,7 +1,7 @@
 
-<section class="volvo">
+<section class="volvo" *ngIf="album">
 
-<div class="header"><span><</span><h1>volvo</h1> <span>></span></div>
+<div class="header"><span routerLink="/gallery/{{album.prev}}"><</span><h1>{{album.label}}</h1> <span routerLink="/gallery/{{album.next}}">></span></div>
 
   <div class="content">
 
@@ -10,21 +10,14 @@
 
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/volvo/volvo1.jpg" class="d-inline-block w-100  " alt="...">
+    <!-- <div class="carousel-item active ">
+      <img src="assets{{album.photos[0].img}}" class="d-inline-block w-100  " alt="...">
+    </div> -->
+    <div *ngFor="let photo of album.photos ; first as isFirst"  [class.active]="isFirst" class="carousel-item ">
+     
+      <img src="assets/{{photo.img}}"  class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
-      <img src="assets/volvo/volvo2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/volvo/volvo3.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/volvo/volvo4.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/volvo/volvo5.jpg" class="d-block w-100" alt="...">
-    </div>
+
   
   </div>
   <button class="carousel-control-prev" type="button " data-bs-target="#carouselExample" data-bs-slide="prev">
