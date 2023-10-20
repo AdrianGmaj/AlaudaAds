@@ -5,20 +5,18 @@
     position: fixed;
 
 
-    // display: grid;
-    // grid-row: 2 1fr;
+    display: grid;
+ grid-template-columns: 1fr 1fr;
+//  grid-template-rows: 1fr 1fr;
 
-    gap: 0;
+
 
     background:
-    // linear-gradient(to top,  #1e445d, #2c3e50);
-    linear-gradient(to top,  #2f2f2f, #212121);
+        // linear-gradient(to top,  #1e445d, #2c3e50);
+        linear-gradient(to top, #2f2f2f, #212121);
 
-      
-        // background:
-        // linear-gradient(to top,  #1e445d, #2c3e50),
-        // url(https://grainy-gradients.vercel.app/noise.svg);
-        // opacity: 90%;
+
+ 
     overflow: hidden;
     color: whitesmoke;
     z-index: 100;
@@ -26,9 +24,9 @@
 
 
     &_logo {
-        display: flex;
-        justify-self: center;
-        align-items: center;
+  
+        // justify-self: center;
+        align-self: center;
 
         img {
             max-width: 15rem;
@@ -37,7 +35,7 @@
     }
 
     &_links {
-
+        margin: 2vh 2vw;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -55,7 +53,7 @@
         }
     }
 
-    .active{
-        border-bottom: 0.1rem solid #ffc900 ;
+    .active {
+        border-bottom: 0.1rem solid #ffc900;
     }
 }

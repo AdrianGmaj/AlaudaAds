@@ -4,13 +4,13 @@
     <h1>albumy</h1>
 
     <div class="gallery_content-photos">
-
-      <div class="gallery_card">
-        <h4 class="gallery_card-title">volvo</h4>
-        <img src="assets/covers/volvo-cover.jpg" alt="tdp" class="gallery_card-img">
+<span *ngFor="let album of albums">
+      <div class="gallery_card" routerLink="{{album.link}}">
+        <h4 class="gallery_card-title">{{album.link}}</h4>
+        <img src='assets/{{album.thumbnail}}' alt="tdp" class="gallery_card-img">
       </div>
-
-      <div class="gallery_card">
+    </span>
+      <!-- <div class="gallery_card">
         <h4 class="gallery_card-title">tour de pologne</h4>
         <img src="assets/covers/tdp-cover.jpg" alt="tdp" class="gallery_card-img">
       </div>
@@ -48,7 +48,7 @@
       </div>
 
       <div class="gallery_card">
-        <h4 class="gallery_card-title">fliwice</h4>
+        <h4 class="gallery_card-title">gliwice</h4>
         <img src="assets/covers/gliwice-cover.jpg" alt="tdp" class="gallery_card-img">
       </div>
 
@@ -65,7 +65,7 @@
       <div class="gallery_card">
         <h4 class="gallery_card-title">mostostal budynek</h4>
         <img src="assets/covers/logo-cover.jpg" alt="tdp" class="gallery_card-img">
-      </div>
+      </div> -->
 
     </div>
 
