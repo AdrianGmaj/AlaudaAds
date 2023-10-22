@@ -1,34 +1,59 @@
 <section class="contact-us">
   <div class="toolbar"></div>
   <div class="content">
-<div class="contac-us_text">
-  <h2>Tworzymy filmy, które wspierają Twój biznes</h2>
-  <p>Rozpocznij z nami współpracę i pojaw się na ekranach. Jesteśmy agencją interaktywną, która stworzy dla Ciebie i Twojego biznesu indywidualny plan i strategię wideo marketingu wspieraną przez inne techniki reklamowe. 
+    <div class="contac-us_text">
+      <h2>Tworzymy filmy, które wspierają Twój biznes</h2>
+      <p>Rozpocznij z nami współpracę i pojaw się na ekranach. Jesteśmy agencją interaktywną, która stworzy dla Ciebie i
+        Twojego biznesu indywidualny plan i strategię wideo marketingu wspieraną przez inne techniki reklamowe.
 
-</p>
-</div>
-<div class="contac-us_form">
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
+      </p>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="contac-us_form">
+      <form action="" >
+        <mat-form-field color="accent" class="example-full-width">
+          <mat-label> imię i nazwisko</mat-label>
+          <input matInput placeholder="" value="">
+        </mat-form-field>
+        <mat-form-field color="accent" class="example-full-width">
+          <mat-label > adres email</mat-label>
+          <input  matInput placeholder="" value="">
+        </mat-form-field>
+
+        <mat-form-field color="accent">
+          <mat-label>Wybierz opcję</mat-label>
+          <mat-select>
+            <mat-option>
+              Reklama Video
+            </mat-option>
+            <mat-option>
+              Kampania Google Ads
+            </mat-option>
+            <mat-option>
+              Social Media
+            </mat-option>
+            <mat-option>
+              Teledysk
+            </mat-option>
+            <mat-option>
+              Sesja Fotograficzna
+            </mat-option>
+            <mat-option>
+              Inne
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field color="accent" >
+          <mat-label>Twoja wiadomość</mat-label>
+          <textarea matInput
+                    cdkTextareaAutosize
+                    #autosize="cdkTextareaAutosize"
+                    cdkAutosizeMinRows="1"
+                    cdkAutosizeMaxRows="5"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="accent" type="submit">WYŚLIJ</button>
+      </form>
+    </div>
   </div>
-</div>
-</div>
 </section>

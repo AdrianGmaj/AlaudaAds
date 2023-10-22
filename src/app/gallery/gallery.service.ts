@@ -297,6 +297,37 @@ export class GalleryService {
         ]
     },
     {
+      link: 'holiday',
+      label: 'wakacje czechy',
+      thumbnail: 'covers/holiday-cover.jpg',
+      prev: 'gliwice',
+      next: 'mostostal',
+      photos:
+        [
+          {
+            id: 1,
+            img: '/holiday/holiday1.jpg'
+          },
+          {
+            id: 2,
+            img: '/holiday/holiday2.jpg'
+          },
+          {
+            id: 3,
+            img: '/holiday/holiday3.jpg'
+          },
+          {
+            id: 4,
+            img: '/holiday/holiday4.jpg'
+          },
+          {
+            id: 5,
+            img: '/holiday/holiday5.jpg'
+          },
+
+        ]
+    },
+    {
       link: 'mostostal',
       label: 'mostostal',
       thumbnail: 'covers/mostostal-cover.jpg',

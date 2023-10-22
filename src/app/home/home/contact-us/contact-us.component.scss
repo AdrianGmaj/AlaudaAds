@@ -4,10 +4,10 @@
         [container-start] 1fr [center-start] repeat(5,
             [col-start] minmax(min-content, 30rem) [col-end]) [center-end] 1fr [container-end];
 
-          
-            background:
-            linear-gradient(to top,  #2c3e509f, transparent),
-            url(https://grainy-gradients.vercel.app/noise.svg);
+
+    background:
+        linear-gradient(to top, #2c3e509f, transparent),
+        url(https://grainy-gradients.vercel.app/noise.svg);
 
 
 
@@ -21,8 +21,8 @@
 
     .content {
         background:
-        // linear-gradient(to top,  #1e445d, #2c3e50);
-        linear-gradient(to top,  #2f2f2f, #212121);
+            // linear-gradient(to top,  #1e445d, #2c3e50);
+            linear-gradient(to top, #2f2f2f, #212121);
 
         grid-column: center-start/container-end;
         width: 100%;
@@ -33,24 +33,50 @@
 
     .contac-us_text {
         padding: 4vh 4vw;
-     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
 
         h2 {
-            font-size: calc(1rem + 1vw);
+            font-size: calc(2.5rem + 1.5vw);
             font-weight: 400;
             color: #ffc900;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
             text-transform: uppercase;
+            line-height: 130%;
 
         }
 
         p {
-            font-size: calc(0.5rem + 0.5vw);
+            font-size: calc(1.5rem + 0.5vw);
             font-weight: 200;
             text-transform: uppercase;
             color: whitesmoke;
+            line-height: 130%;
+            text-align: justify;
+  text-justify: inter-word;
         }
+        
     }
 
+    .contac-us_form {
+        padding: 4vh 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            gap: 2vh;
+
+
+            mat-form-field {
+                width: 30vw;
+            }
+        }
+    }
 }

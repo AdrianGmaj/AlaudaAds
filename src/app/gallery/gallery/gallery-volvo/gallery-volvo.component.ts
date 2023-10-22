@@ -9,18 +9,24 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./gallery-volvo.component.scss']
 })
 export class GalleryVolvoComponent implements OnInit {
-  album: Album 
+  album: Album
   id: string
 
   constructor(private galleryService: GalleryService,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.id = this.route.snapshot.params['id']
-    this.album = this.galleryService.getAlbums().find((element) => element.link == this.id)
+    this.route.paramMap.subscribe((params) => {
+      this.id = params.get('id')
 
-    console.log(this.id)
-    console.log(this.album)
-    console.log(this.route.snapshot.params)
+      this.album = this.galleryService.getAlbums().find((element) => element.link == this.id)
+
+      console.log(this.id)
+      console.log(this.album)
+      console.log(params)
+    })
+
+
+
   }
 }
