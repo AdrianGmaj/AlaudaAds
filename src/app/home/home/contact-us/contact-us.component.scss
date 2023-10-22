@@ -1,12 +1,12 @@
 .contact-us {
     display: grid;
     grid-template-columns:
-        [container-start] 1fr [center-start] repeat(5,
-            [col-start] minmax(min-content, 30rem) [col-end]) [center-end] 1fr [container-end];
+        [container-start] 20rem [center-start] repeat(5,
+            [col-start] minmax(min-content, 35rem) [col-end]) [center-end] 1fr [container-end];
 
 
     background:
-        linear-gradient(to top, #2c3e509f, transparent),
+        linear-gradient(to left, #2c3e509f, transparent),
         url(https://grainy-gradients.vercel.app/noise.svg);
 
 

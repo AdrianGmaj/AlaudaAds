@@ -1,0 +1,104 @@
+.video {
+    display: grid;
+
+    grid-template-columns:
+        [container-start] 20rem [center-start] repeat(5,
+            [col-start] minmax(min-content, 35rem) [col-end]) [center-end] 1fr [container-end];
+
+
+    background:
+        linear-gradient(to left, #2c3e509f, transparent),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+
+    &_content {
+        margin-top: 2vh;
+        grid-column: container-start/container-end;
+        padding: 5vh 5vw;
+        background: linear-gradient(to top, #2f2f2f, #212121);
+
+        h2 {
+            font-size: calc(2.5rem + 1.5vw);
+            font-weight: 400;
+            color: whitesmoke;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            line-height: 130%;
+            text-align: center;
+            position: relative;
+        }
+        h2:after{
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: 20%;
+            right: 20%;
+            width: auto;
+            background-color: #81807db8;
+            height: 0.1rem;
+            justify-self: center;
+        }
+
+        &-cards {
+            padding: 6vh 7vw;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+            gap: 6vh calc(4rem + 4vw);
+            place-items: center;
+
+
+            &_card {
+                img {
+                    height: 40rem;
+                    width: 100%;
+                    object-fit: cover;
+                    filter: grayscale(90%);
+                    transition: all 0.5s ease-in-out;
+                }
+
+                h3 {
+
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: whitesmoke;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    padding: 3vh;
+                    position: relative;
+                  
+                }
+                h3:after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0%;
+                    left: 20%;
+                    right: 20%;
+                    width: auto;
+                    background-color: #81807db8;
+                    height: 0.1rem;
+                    justify-self: center;
+                }
+              
+
+                p {
+
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: whitesmoke;
+                    text-align: center;
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+            }
+
+            &_card:hover img {
+               transform: scale(110%);
+               cursor: pointer;
+               filter: grayscale(0%);
+            }
+        }
+    }
+
+}

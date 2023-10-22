@@ -10,12 +10,14 @@ import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {TextFieldModule} from '@angular/cdk/text-field';
 import {MatButtonModule} from '@angular/material/button';
+import { VideoComponent } from './video/video.component';
 
 
 @NgModule({
   declarations: [HomeComponent,
     ShowcaseComponent,
-    ContactUsComponent],
+    ContactUsComponent,
+  VideoComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
