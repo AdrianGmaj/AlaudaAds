@@ -3,8 +3,8 @@
   <h2>kampanie video</h2>
 
   <div class="video_content-cards">
-    <div *ngFor="let video of videos" class="video_content-cards_card">
-      <img src="assets/{{video.thumbnail}}" alt="">
+    <div *ngFor="let video of videos" class="video_content-cards_card" >
+      <img src="assets/{{video.thumbnail}}" alt="" routerLink='/video-marketing/#{{video.hash}}'>
       <h3>{{video.label}}</h3>
       <p>{{video.para}}</p>
 

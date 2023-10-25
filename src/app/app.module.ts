@@ -7,6 +7,8 @@ import { HomeModule } from './home/home.module';
 import { AppRoutingModule } from './app-routing-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryModule } from './gallery/gallery.module';
+import { VideoMarketingComponent } from './video-marketing/video-marketing/video-marketing.component';
+import { VideoMarketingModule } from './video-marketing/video-marketing.module';
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { GalleryModule } from './gallery/gallery.module';
     GalleryModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    VideoMarketingModule
     
   ],
   providers: [],

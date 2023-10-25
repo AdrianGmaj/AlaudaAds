@@ -1,0 +1,226 @@
+.video-marketing {
+    display: grid;
+    grid-template-columns:
+        [container-start] 20rem [center-start] repeat(5,
+            [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 20rem [container-end];
+    grid-template-rows: 12rem;
+    background:
+        linear-gradient(to top, #2c3e509f, transparent),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+  
+
+    min-height: 100vh;
+
+    .toolbar {
+
+        grid-column: container-start/conteinar-end;
+        height: 12rem;
+
+
+
+    }
+
+    .video-marketing_video {
+        grid-column: container-start/container-end;
+
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+
+        }
+
+        .wrapper::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background:
+                linear-gradient(to top, #2c3e509f, transparent),
+                url(https://grainy-gradients.vercel.app/noise.svg);
+
+
+        }
+
+        video {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 80vh;
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+
+
+        }
+
+        .viewport-header {
+            position: relative;
+            color: white;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+            padding: 6vh 4vw;
+
+            h1 {
+                font-size: calc(3rem + 3vw), ;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: whitesmoke;
+                padding: 6vh 4vw;
+                line-height: 10rem;
+            }
+
+            span {
+                color: #ffc900
+            }
+        }
+    }
+
+
+
+    .video-marketing_movies,
+    .video-marketing_products {
+        margin-top: 2vh;
+        padding: 1vh 4vw;
+        grid-column: container-start/center-end;
+        background:
+
+            linear-gradient(to top, #2f2f2f, #212121);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .photo {
+            padding: 4vh 4vw;
+  
+          
+        
+            img {
+                height: 45vh;
+                justify-self: center;
+                align-self: center;
+                box-shadow: 0 2px 4px 0 rgba(224, 211, 23, 0.556);
+          
+            }
+        }
+
+
+
+        .content {
+            padding: 5vh 4vw;
+            text-align: center;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            h2 {
+                font-size: calc(2.5rem + 1.5vw);
+                font-weight: 400;
+                color: whitesmoke;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+                text-transform: uppercase;
+                line-height: 130%;
+                position: relative;
+            }
+            h2:after{
+                content: '';
+                position: absolute;
+                bottom: 0%;
+                left: 20%;
+                right: 20%;
+                width: auto;
+                background-color: #81807db8;
+                height: 0.1rem;
+                justify-self: center;
+            }
+
+            p {
+                font-size: calc(0.5rem + 0.6vw);
+                font-weight: 200;
+                text-transform: uppercase;
+                color: whitesmoke;
+                line-height: 130%;
+                text-align: justify;
+                text-justify: inter-word;
+                padding: 2vw;
+                justify-self: center;
+            }
+        }
+    }
+
+  .video-marketin_sm,
+  .video-marketing_mv{
+    margin-top: 2vh;
+        padding: 1vh 4vw;
+        grid-column: center-start/container-end;
+        background:
+
+            linear-gradient(to top, #2f2f2f, #212121);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .photo {
+            padding: 4vh 4vw;
+  
+          
+        
+            img {
+                height: 45vh;
+                justify-self: center;
+                align-self: center;
+                box-shadow: 0 2px 4px 0 rgba(224, 211, 23, 0.556);
+          
+            }
+        }
+
+
+
+        .content {
+            padding: 5vh 4vw;
+            text-align: center;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+           
+
+            h2 {
+                font-size: calc(2.5rem + 1.5vw);
+                font-weight: 400;
+                color: whitesmoke;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+                text-transform: uppercase;
+                line-height: 130%;
+                position: relative;
+            }
+            h2:after{
+                content: '';
+                position: absolute;
+                bottom: 0%;
+                left: 20%;
+                right: 20%;
+                width: auto;
+                background-color: #81807db8;
+                height: 0.1rem;
+                justify-self: center;
+            }
+
+            p {
+                font-size: calc(0.5rem + 0.6vw);
+                font-weight: 200;
+                text-transform: uppercase;
+                color: whitesmoke;
+                line-height: 130%;
+                text-align: justify;
+                text-justify: inter-word;
+                padding: 2vw;
+                justify-self: center;
+            }
+        }
+    }
+
+}
