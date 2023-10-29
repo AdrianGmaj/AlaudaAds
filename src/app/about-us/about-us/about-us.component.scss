@@ -84,10 +84,113 @@
         grid-column: container-start/conteinar-end;
         display: grid;
         grid-template-columns: 50% 50%;
+        min-height: 70vh;
+        margin: 2vh 2vw;
 
 
         .about-us-text{
-            grid-column: 1r;
+            grid-column: 1/2;
+            padding: 6vh 6vw;
+            text-align: center;
+            background:    linear-gradient(to top, #2f2f2f, #212121); ;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+            
+            h3 {
+                font-size: calc(2.5rem + 1.5vw);
+                font-weight: 400;
+                color: whitesmoke;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+                text-transform: uppercase;
+                line-height: 130%;
+                position: relative;
+                padding: 2vh 2vw;
+            }
+            h3:after{
+                content: '';
+                position: absolute;
+                bottom: 0%;
+                left: 20%;
+                right: 20%;
+                width: auto;
+                background-color: #81807db8;
+                height: 0.1rem;
+                justify-self: center;
+            }
+            span{
+                color: #ffc900;
+            }
+            p{
+                font-size: calc(0.5rem + 0.6vw);
+                font-weight: 200;
+                text-transform: uppercase;
+                color: whitesmoke;
+                line-height: 130%;
+                text-align: justify;
+                text-justify: inter-word;
+                padding: 2vw;
+                justify-self: center;
+            }
+        }
+            
+            .about-us-photo{
+                grid-column: 2/3;
+                background-image: url('/assets/about-us/ceo.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position:unset;
+                position: relative;
+                padding: 4vh 4vw;
+                  
+                filter: grayscale(40%);
+            
+            
+                img{
+             
+                }
+               .photo-text{
+                position: absolute;
+                bottom: 0;
+
+
+                h4 {
+                    font-size: calc(1rem + 1.5vw);
+                    font-weight: 400;
+                    color: #ffc900;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+                    text-transform: uppercase;
+                    line-height: 130%;
+                    position: relative;
+                    padding: 2vh 2vw;
+                    text-align: center;
+                 
+                }
+                h4:after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0%;
+                    left: 20%;
+                    right: 20%;
+                    width: auto;
+                    background-color: #81807db8;
+                    height: 0.1rem;
+                    justify-self: center;
+                }
+                p{
+                    font-size: calc(0.5rem + 0.6vw);
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    color: #ffc900;
+                    line-height: 130%;
+                    text-align: justify;
+                    text-justify: inter-word;
+                    padding: 2vw;
+                    justify-self: center;
+                    background-color: #2121219f;
+       
+                }
+               }
+            }
         }
     }
-}
