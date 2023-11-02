@@ -39,26 +39,33 @@
         }
 
         &-cards {
-            padding: 6vh 7vw;
+            padding: 4vh 4vw;
 
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
-            gap: 6vh calc(4rem + 4vw);
-            place-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+            gap: 7vh calc(4rem + 4vw);
+            // place-items: center;
 
 
             &_card {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 3vh;
                 img {
                     height: 40rem;
                     width: 100%;
                     object-fit: cover;
                     filter: grayscale(90%);
                     transition: all 0.5s ease-in-out;
+                    align-self: center;
                 }
 
                 h3 {
 
-                    font-size: 2.5rem;
+                    font-size:calc(1rem + 1vw);
                     font-weight: 600;
                     text-transform: uppercase;
                     color: whitesmoke;
@@ -83,14 +90,15 @@
 
                 p {
 
-                    font-size: 1.5rem;
-                    font-weight: 400;
+                    font-size: calc(0.5rem + 1vw);
+                    font-weight: 300;
                     text-transform: uppercase;
                     color: whitesmoke;
                     text-align: center;
                     text-align: justify;
                     text-justify: inter-word;
                     padding: 1vh 2vw;
+                    line-height: 130%;
                 }
             }
 
@@ -100,6 +108,20 @@
                filter: grayscale(0%);
             }
         }
+    }
+
+    @media screen and (max-width: 750px){
+        img {
+            height: 30rem;
+            width: 70vw;
+            object-fit: cover;
+            filter: grayscale(90%);
+            transition: all 0.5s ease-in-out;
+        }
+        p{
+            font-size: calc(0.5rem + 0.5vw);
+        }
+
     }
 
 }

@@ -7,7 +7,7 @@
     background:
         linear-gradient(to top, #2c3e509f, transparent),
         url(https://grainy-gradients.vercel.app/noise.svg);
-  
+
 
     min-height: 100vh;
 
@@ -93,18 +93,22 @@
             linear-gradient(to top, #2f2f2f, #212121);
         display: grid;
         grid-template-columns: 1fr 1fr;
+        min-height: 50vh;
 
         .photo {
             padding: 4vh 4vw;
-  
-          
-        
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+
             img {
                 height: 45vh;
                 justify-self: center;
                 align-self: center;
+                object-fit: cover;
                 box-shadow: 0 2px 4px 0 rgba(224, 211, 23, 0.556);
-          
+
             }
         }
 
@@ -117,6 +121,7 @@
             display: flex;
             flex-direction: column;
             gap: 2vh;
+
             h2 {
                 font-size: calc(2.5rem + 1.5vw);
                 font-weight: 400;
@@ -126,7 +131,8 @@
                 line-height: 130%;
                 position: relative;
             }
-            h2:after{
+
+            h2:after {
                 content: '';
                 position: absolute;
                 bottom: 0%;
@@ -152,9 +158,9 @@
         }
     }
 
-  .video-marketin_sm,
-  .video-marketing_mv{
-    margin-top: 2vh;
+    .video-marketin_sm,
+    .video-marketing_mv {
+        margin-top: 2vh;
         padding: 1vh 4vw;
         grid-column: center-start/container-end;
         background:
@@ -162,18 +168,24 @@
             linear-gradient(to top, #2f2f2f, #212121);
         display: grid;
         grid-template-columns: 1fr 1fr;
+        min-height: 50vh;
 
         .photo {
             padding: 4vh 4vw;
-  
-          
-        
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+
+
             img {
                 height: 45vh;
+                display: flex;
                 justify-self: center;
                 align-self: center;
                 box-shadow: 0 2px 4px 0 rgba(224, 211, 23, 0.556);
-          
+                object-fit: cover;
+
             }
         }
 
@@ -186,7 +198,7 @@
             display: flex;
             flex-direction: column;
             gap: 2vh;
-           
+
 
             h2 {
                 font-size: calc(2.5rem + 1.5vw);
@@ -197,7 +209,8 @@
                 line-height: 130%;
                 position: relative;
             }
-            h2:after{
+
+            h2:after {
                 content: '';
                 position: absolute;
                 bottom: 0%;
@@ -220,6 +233,69 @@
                 padding: 2vw;
                 justify-self: center;
             }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+
+        .video-marketin_sm,
+        .video-marketing_mv {
+            grid-column: container-start/container-end;
+            margin-top: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            width: 100vw;
+            background:
+                linear-gradient(to top, #000306db, transparent);
+
+
+            .photo {
+                padding: 0;
+            }
+
+            img {
+                max-height: 70%;
+                padding: 0;
+            }
+
+
+        }
+
+        .video-marketing_movies,
+        .video-marketing_products {
+            grid-column: container-start/container-end;
+            margin-top: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            width: 100vw;
+
+            p {
+                font-size: 10rem;
+            }
+
+            .photo {
+                padding: 0;
+            }
+
+            img {
+                max-height: 70%;
+                padding: 0;
+            }
+
+
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .video-marketin_sm,
+        .video-marketing_mv,
+        .video-marketing_movies,
+        .video-marketing_products {
+            grid-column: container-start/container-end;
+
         }
     }
 

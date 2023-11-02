@@ -13,11 +13,7 @@
 
 
 
-    .toolbar {
-        grid-template-columns: container-start/conteinar-end;
-        height: 16rem;
 
-    }
 
     .content {
         background:
@@ -76,6 +72,42 @@
 
             mat-form-field {
                 width: 30vw;
+            }
+        }
+    }
+    @media screen and (max-width: 750px) {
+        .content {
+            background:
+ 
+                linear-gradient(to top, #2f2f2f, #212121);
+    
+            grid-column: container-start/container-end;
+            width: 100%;
+            min-height: 70vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            margin:0;
+        
+        }
+        .contac-us_form {
+            padding: 4vh 4vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+                gap: 2vh;
+    
+    
+                mat-form-field {
+                    width: 70vw;
+                }
             }
         }
     }
