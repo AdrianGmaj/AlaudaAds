@@ -10,12 +10,14 @@ import { GalleryModule } from './gallery/gallery.module';
 import { VideoMarketingComponent } from './video-marketing/video-marketing/video-marketing.component';
 import { VideoMarketingModule } from './video-marketing/video-marketing.module';
 import { AboutUsModule } from './about-us/about-us.module';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
-      ToolbarComponent
+      ToolbarComponent,
+      FooterComponent
    ],
   imports: [
     BrowserModule,
