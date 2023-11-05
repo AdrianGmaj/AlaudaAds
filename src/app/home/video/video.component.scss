@@ -26,7 +26,8 @@
             text-align: center;
             position: relative;
         }
-        h2:after{
+
+        h2:after {
             content: '';
             position: absolute;
             bottom: -20%;
@@ -54,6 +55,7 @@
                 justify-content: center;
                 align-items: center;
                 gap: 3vh;
+
                 img {
                     height: 40rem;
                     width: 100%;
@@ -65,7 +67,7 @@
 
                 h3 {
 
-                    font-size:calc(1rem + 1vw);
+                    font-size: calc(1rem + 1vw);
                     font-weight: 600;
                     text-transform: uppercase;
                     color: whitesmoke;
@@ -73,9 +75,10 @@
                     letter-spacing: 0.1em;
                     padding: 3vh;
                     position: relative;
-                  
+
                 }
-                h3:after{
+
+                h3:after {
                     content: '';
                     position: absolute;
                     bottom: 0%;
@@ -86,11 +89,11 @@
                     height: 0.1rem;
                     justify-self: center;
                 }
-              
+
 
                 p {
 
-                    font-size: calc(0.5rem + 1vw);
+                    font-size: calc(0.5rem + 0.5vw);
                     font-weight: 300;
                     text-transform: uppercase;
                     color: whitesmoke;
@@ -103,14 +106,21 @@
             }
 
             &_card:hover img {
-               transform: scale(110%);
-               cursor: pointer;
-               filter: grayscale(0%);
+                transform: scale(110%);
+                cursor: pointer;
+                filter: grayscale(0%);
             }
         }
     }
 
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 750px) {
+
+        .video_content {
+            padding: 4vh 2vw;
+            justify-content: center;
+            align-items: center;
+        }
+
         img {
             height: 30rem;
             width: 70vw;
@@ -118,8 +128,26 @@
             filter: grayscale(90%);
             transition: all 0.5s ease-in-out;
         }
-        p{
-            font-size: calc(0.5rem + 0.5vw);
+
+        .video_content-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1/container-end;
+        }
+
+        .video_content-cards_card {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100vw;
+            padding: 4vh 4vw;
+
+
+            p {
+                font-size: calc(1.5rem + 0.5vw);
+                padding: 4vh 4vw;          }
         }
 
     }
