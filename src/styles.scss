@@ -5,12 +5,31 @@
   padding: 0;
   box-sizing: border-box;
 
+
 }
 
 
 @import "scss/2.variables";
 @import "scss/3.utilities";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow: scroll;}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow: scroll;
+}

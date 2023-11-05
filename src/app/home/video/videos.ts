@@ -3,5 +3,5 @@ export interface Videos {
     label: string,
     thumbnail: string,
     para: string,
-    hash:string
+    fragment:string
 }

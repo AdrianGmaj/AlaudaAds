@@ -11,6 +11,7 @@ import { VideoMarketingComponent } from './video-marketing/video-marketing/video
 import { VideoMarketingModule } from './video-marketing/video-marketing.module';
 import { AboutUsModule } from './about-us/about-us.module';
 import { FooterComponent } from './footer/footer.component';
+import { ContactModule } from './contact/contact.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     VideoMarketingModule,
-    AboutUsModule
+    AboutUsModule,
+    ContactModule
     
   ],
   providers: [],

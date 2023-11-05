@@ -1,0 +1,187 @@
+.contact {
+    display: grid;
+    grid-template-columns:
+        [container-start] 20rem [center-start] repeat(5,
+            [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 20rem [container-end];
+    grid-template-rows: 12rem;
+    background:
+        linear-gradient(to top, #2c3e509f, transparent),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+
+
+    min-height: 100vh;
+
+    .toolbar {
+
+        grid-column: container-start/conteinar-end;
+        height: 12rem;
+    }
+
+    h2 {
+
+        grid-column: container-start/conteinar-end;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: calc(2.5rem + 1.5vw);
+        font-weight: 400;
+        color: black;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        text-transform: uppercase;
+        line-height: 130%;
+        padding: 4vh 4vw;
+    }
+
+    &-content {
+        grid-column: container-start/conteinar-end;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        min-height: 70vh;
+        margin-bottom: 6vh;
+
+
+
+    }
+
+    .contact-text {
+        grid-column: 1/2;
+        padding: 5vh 5vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        h4 {
+            text-transform: uppercase;
+            font-size: calc(1rem + 1vw);
+            font-weight: 400;
+        }
+
+        p {
+            font-size: calc(1.5rem + 0.5vw);
+            font-weight: 200;
+
+            color: whitesmoke;
+            line-height: 130%;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 4vh 4vw;
+        }
+
+        .contact-data {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 2vh 2vw;
+
+        }
+
+        .contact-sm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4vh;
+            padding: 5vh;
+             #fb-button{
+                text-decoration: none;
+                color: white;
+                background: #3B5998;
+                width: 40%;
+                height: 5rem;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2vw;
+                justify-content: center;
+                border-radius: 0.5rem;
+            
+            }
+             #ig-button{
+                text-decoration: none;
+                color: white;
+                background: linear-gradient( to bottom, #ea6272, #fed57f);
+                border-radius: 0.5rem;
+                width: 40%;
+                height: 5rem;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2vw;
+                justify-content: center;
+            
+            }
+            h3{
+                text-transform: uppercase;
+                font-size: calc(1rem + 1vw);
+                font-weight: 400;
+                position: relative;
+                padding: 2vh 2vw;
+            }
+            h3:after {
+                content: '';
+                position: absolute;
+                top: -40%;
+                left: -100%;
+                right: -100%;
+                width: auto;
+                background-color: black;
+                height: 0.1rem;
+                justify-self: center;
+            }
+
+          
+        }
+
+
+    }
+
+    .contact-form {
+        grid-column: 2/3;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to left, #2f2f2f, #212121);
+
+        h3 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: calc(2rem + 1vw);
+            font-weight: 400;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
+            line-height: 130%;
+            padding: 3vh 3vw;
+            position: relative;
+        }
+
+        h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0%;
+            left: 20%;
+            right: 20%;
+            width: auto;
+            background-color: #81807db8;
+            height: 0.1rem;
+            justify-self: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            gap: 2vh;
+
+
+            mat-form-field {
+                width: 30vw;
+            }
+        }
+    }
+}

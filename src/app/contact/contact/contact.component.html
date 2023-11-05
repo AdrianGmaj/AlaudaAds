@@ -1,0 +1,67 @@
+<section class="contact">
+  <div class="toolbar"></div>
+  <h2>kontakt</h2>
+  <div class="contact-content">
+
+    <div class="contact-text">
+      <h4>Alauda Ads, Katowice</h4>
+      <p>Skontaktuj się z nami w celu rozpoczęcia współpracy. Napisz w wiadomości, o jaki rodzaj wydarzenia chodzi, jego
+        lokalizację i datę. Podaj więcej szczegółów. Odezwiemy się z pomysłami i planem współpracy. </p>
+      <div class="contact-data">
+        <span>Dodatkowe adresy informacyjne:</span>
+        <b>mail: cezary.skowron@alaudads.pl</b>
+        <b>tel.: 511779957</b>
+      </div>
+      <div class="contact-sm">
+        <h3>znajdź nas</h3>
+        <a id="fb-button" class="fa fa-facebook">alauda_ads</a>
+        <a id="ig-button" class="fa fa-instagram">alauda_ads</a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Skorzystaj z formularza</h3>
+      <form action="">
+        <mat-form-field color="accent" class="example-full-width">
+          <mat-label> imię i nazwisko</mat-label>
+          <input matInput placeholder="" value="">
+        </mat-form-field>
+        <mat-form-field color="accent" class="example-full-width">
+          <mat-label> adres email</mat-label>
+          <input matInput placeholder="" value="">
+        </mat-form-field>
+
+        <mat-form-field color="accent">
+          <mat-label>Wybierz opcję</mat-label>
+          <mat-select>
+            <mat-option>
+              Reklama Video
+            </mat-option>
+            <mat-option>
+              Kampania Google Ads
+            </mat-option>
+            <mat-option>
+              Social Media
+            </mat-option>
+            <mat-option>
+              Teledysk
+            </mat-option>
+            <mat-option>
+              Sesja Fotograficzna
+            </mat-option>
+            <mat-option>
+              Inne
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field color="accent">
+          <mat-label>Twoja wiadomość</mat-label>
+          <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+            cdkAutosizeMaxRows="5"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="accent" type="submit">WYŚLIJ</button>
+      </form>
+    </div>
+  </div>
+</section>

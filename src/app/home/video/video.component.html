@@ -4,7 +4,7 @@
 
   <div class="video_content-cards">
     <div *ngFor="let video of videos" class="video_content-cards_card" >
-      <img src="assets/{{video.thumbnail}}" alt="" routerLink='/video-marketing/#{{video.hash}}'>
+      <img src="assets/{{video.thumbnail}}" alt="" routerLink="/video-marketing" fragment="{{video.fragment}}">
       <h3>{{video.label}}</h3>
       <p>{{video.para}}</p>
 
