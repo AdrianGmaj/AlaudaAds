@@ -6,8 +6,8 @@
 
 
     display: grid;
- grid-template-columns: 1fr 1fr;
-//  grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
 
 
 
@@ -16,7 +16,7 @@
         linear-gradient(to top, #2f2f2f, #212121);
 
 
- 
+
     overflow: hidden;
     color: whitesmoke;
     z-index: 100;
@@ -24,7 +24,7 @@
 
 
     &_logo {
-  
+
         // justify-self: center;
         align-self: center;
 
@@ -36,6 +36,7 @@
 
     &_links {
         margin: 2vh 2vw;
+        grid-column: 2/3;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -51,9 +52,73 @@
             overflow: hidden;
             transition: all 0.5s ease;
         }
+
+    }
+
+    .offcanvas-body {
+        background:
+
+            linear-gradient(to bottom, #2f2f2f, #212121);
+
+    }
+
+    .button {
+        color: #ffc900;
+    }
+
+    .offcanvas-header {
+        background:
+
+            linear-gradient(to top, #2f2f2f, #212121);
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2vh;
+        padding: 4vh;
+
+     
+        a {
+            font-size: calc(1.5rem + 0.5vw), ;
+
+            padding: 0.8rem;
+            place-self: start;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            text-transform: uppercase;
+        
+        }
     }
 
     .active {
         border-bottom: 0.1rem solid #ffc900;
+    }
+
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    @media screen and (max-width: 750px) {
+        .nav_links {
+            display: none;
+        }
+
+        .sidenav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            padding: 1vh 3vw;
+        }
+
+        .material-symbols-outlined {
+            display: flex;
+
+        }
     }
 }
